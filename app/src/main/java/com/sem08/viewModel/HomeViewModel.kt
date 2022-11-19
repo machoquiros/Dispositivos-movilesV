@@ -1,13 +1,26 @@
 package com.sem08.viewModel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.*
+import com.sem08.data.LugarDatabase
+import com.sem08.model.Lugar
+import com.sem08.repository.LugarRepository
+import kotlinx.coroutines.launch
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel (application: Application): AndroidViewModel(application) {
+    private val repository: LugarRepository
+    val obtenerLugares: LiveData<List<Lugar>>
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    init{
+        val lugarDao = LugarDatabase.getDatabase(application).lugarDao()
+        repository = LugarRepository(lugarDao)
+        obtenerLugares = repository.obtenerLugares
     }
-    val text: LiveData<String> = _text
+
+    fun guardarLugar(lugar: Lugar){
+        viewModelScope.launch { repository.guardarLugar(lugar) }
+    }
+    fun eliminarLugar(lugar: Lugar){
+        viewModelScope.launch { repository.eliminarLugar(lugar) }
+    }
 }
