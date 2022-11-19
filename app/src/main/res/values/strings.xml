@@ -22,4 +22,7 @@
     <string name="telefonoLugar">Teléfono (8888-8888)</string>
     <string name="webLugar">Web</string>
     <string name="btAddLugar">Agregar Lugar</string>
+
+    <string name="ms_AddLugar">Lugar Agregado con Éxito</string>
+    <string name="ms_FaltaValores">Faltan Valores</string>
 </resources>

@@ -12,6 +12,13 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:src="@drawable/ic_add"
-        tools:layout_editor_absoluteX="333dp"
-        tools:layout_editor_absoluteY="653dp" />
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclador"
+        android:layout_width="410dp"
+        android:layout_height="730dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
