@@ -24,5 +24,9 @@
     <string name="btAddLugar">Agregar Lugar</string>
 
     <string name="ms_AddLugar">Lugar Agregado con Éxito</string>
+    <string name="ms_UpdateLugar">Lugar Modificado con Éxito</string>
     <string name="ms_FaltaValores">Faltan Valores</string>
+
+    <string name="bt_update_lugar">Actualizar Lugar</string>
+    <string name="bt_delete_lugar">Eliminar Lugar</string>
 </resources>
