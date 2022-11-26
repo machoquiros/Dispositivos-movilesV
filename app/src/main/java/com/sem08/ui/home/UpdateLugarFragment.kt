@@ -37,7 +37,7 @@ class UpdateLugarFragment : Fragment() {
         binding.etWeb.setText(args.lugarArg.web)
 
         binding.btUpdateLugar.setOnClickListener{ updateLugar()}
-        //binding.btDeleteLugar.setOnClickListener{ deleteLugar()}
+        //binding.btDeleteLugar.setOnClickListener{ deleteLugar()} HACER ESTE METODO DE TAREA
 
         // Inflate the layout for this fragment
         return binding.root
