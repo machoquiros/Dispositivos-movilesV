@@ -37,7 +37,7 @@ class UpdateLugarFragment : Fragment() {
         binding.etWeb.setText(args.lugarArg.web)
 
         binding.btUpdateLugar.setOnClickListener{ updateLugar()}
-        //binding.btDeleteLugar.setOnClickListener{ deleteLugar()} HACER ESTE METODO DE TAREA
+        binding.btDeleteLugar.setOnClickListener{ deleteLugar()}
 
         // Inflate the layout for this fragment
         return binding.root
@@ -58,5 +58,17 @@ class UpdateLugarFragment : Fragment() {
             Toast.makeText(requireContext(),getString(R.string.ms_FaltaValores),Toast.LENGTH_LONG).show()
         }
 
+    }
+
+    private fun deleteLugar(){
+        val nombre = binding.etNombre.text.toString()
+        val telefono = binding.etTelefono.text.toString()
+        val correo = binding.etCorreoLugar.text.toString()
+        val web = binding.etWeb.text.toString()
+
+        val lugar = Lugar(args.lugarArg.id,nombre,correo,web,telefono)
+        homeViewModel.eliminarLugar(lugar)
+        Toast.makeText(requireContext(),getString(R.string.ms_DeleteLugar),Toast.LENGTH_LONG).show()
+        findNavController().navigate(R.id.action_updateLugarFragment_to_nav_home)
     }
 }
