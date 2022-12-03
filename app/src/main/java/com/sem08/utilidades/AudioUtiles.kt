@@ -6,14 +6,17 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.media.MediaPlayer
 import android.media.MediaRecorder
+import android.os.Build
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.sem08.R
 import java.io.File
 import java.io.IOException
 
+@RequiresApi(Build.VERSION_CODES.O)
 class AudioUtiles(
     private val actividad: Activity,
     private val contexto: Context,

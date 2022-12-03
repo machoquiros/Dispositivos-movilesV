@@ -34,4 +34,8 @@
     <string name="todo">To do</string>
     <string name="msg_imagen">Foto del Lugar</string>
     <string name="msgEscucharAudio">Escuchando audio</string>
+
+    <string name="msgInicioNotaAudio">Grabando</string>
+    <string name="msgDetieneNotaAudio">Detiene</string>
+    <string name="msgSubiendo">Subiendo los archivos</string>
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sem08</string>
+    <string name="btAddLugar">Add Place</string>
+    <string name="telefonoLugar">Phone</string>
+    <string name="nombreLugar">Name</string>
+    <string name="et_correo">Email</string>
+    <string name="et_clave">Password</string>
+</resources>
