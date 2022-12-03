@@ -30,4 +30,8 @@
 
     <string name="bt_update_lugar">Actualizar Lugar</string>
     <string name="bt_delete_lugar">Eliminar Lugar</string>
+
+    <string name="todo">To do</string>
+    <string name="msg_imagen">Foto del Lugar</string>
+    <string name="msgEscucharAudio">Escuchando audio</string>
 </resources>

@@ -69,4 +69,10 @@ dependencies {
     //Firebase-firestore
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
+    //Firebase Storage
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    //Github
+    implementation 'com.github.bumbtech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumbtech.glide:compiler:4.13.0'
 }
